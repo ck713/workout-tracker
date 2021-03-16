@@ -11,50 +11,42 @@ const workoutSchema = new Schema({
       distance: {
         type: String,
         trim: true,
-        required: 'Distance',
+        required: 'Enter distance',
       },
       duration: {
         type: Number,
         trim: true,
-        required: 'Duration',
+        required: 'Enter duration',
       },
       name: {
         type: String,
         trim: true,
-        required: 'Exercise',
+        required: 'Enter exercise name',
       },
       reps: {
         type: Number,
         trim: true,
-        required: 'Reps',
+        required: 'Enter # of reps',
       },
       sets: {
         type: Number,
         trim: true,
-        required: 'Sets',
+        required: 'Enter # of sets',
       },
       type: {
         type: String,
         trim: true,
-        required: 'Type',
+        required: 'Enter workout type',
       },
       weight: {
         type: Number,
         trim: true,
-        required: 'Weight',
+        required: 'Enter weight',
       },
     },
   ],
 })
 
-// adds a dynamically-created property to schema
-workoutSchema.virtual('totalDuration').get(function () {
-  // "reduce" array of exercises down to just the sum of their durations
-  return this.exercises.reduce((total, exercise) => {
-    return total + exercise.duration
-  }, 0)
-})
-
 const Workout = mongoose.model('Workout', workoutSchema)
 
-module.exports = { Workout }
+module.exports = Workout
