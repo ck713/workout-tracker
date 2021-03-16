@@ -7,8 +7,8 @@ router.get('/', (req, res) => {
   })
 })
 
-router.get('/exercise', (req, res) => {
-  res.sendFile(path.join(__dirname, '../public/exercise.html'), (err) => {
+router.get('/workouts', (req, res) => {
+  res.sendFile(path.join(__dirname, '../public/workouts.html'), (err) => {
     if (err) throw err
   })
 })
