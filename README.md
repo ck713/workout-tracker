@@ -1,57 +1,54 @@
-# Unit 17 Nosql Homework: Workout Tracker
+# Workout Tracker
 
-For this assignment, you'll create a workout tracker. You have already been provided with the front end code in the `Develop` folder. This assignment will require you to create Mongo database with a Mongoose schema and handle routes with Express.
+## Main project goal
 
-## User Story
+- The main goal of this application is to be able to view, create, and track daily workouts. The application will achieve this by logging multiple exercises in a workout on a given day (with the workout name, type, weight, sets, reps, and duration of exercise). If the exercise is a cardio exercise, the application will track the distance traveled.
 
-* As a user, I want to be able to view create and track daily workouts. I want to be able to log multiple exercises in a workout on a given day. I should also be able to track the name, type, weight, sets, reps, and duration of exercise. If the exercise is a cardio exercise, I should be able to track my distance traveled.
+### Installation
 
-## Business Context
+## Instructions to run the application locally:
 
-A consumer will reach their fitness goals more quickly when they track their workout progress.
+- Run..
 
-## Acceptance Criteria
+```
+npm install
+```
 
-When the user loads the page, they should be given the option to create a new workout or continue with their last workout.
+- ..then run
 
-The user should be able to:
+```
+npm start
+```
 
-  * Add exercises to a previous workout plan.
+## ..or view the hosted application live:
 
-  * Add new exercises to a new workout plan.
+- [Here!](https://agile-crag-02741.herokuapp.com/)
 
-  * View the combined weight of multiple exercises on the `stats` page.
+## Functionality
 
-To deploy an application with a MongoDB database to Heroku, you'll need to set up a MongoDB Atlas account and connect a database from there to your application. Be sure to use the following guides for support:
+- There are 3 x burgers out of the box
+- Users may add burgers they have devoured or have not yet devoured
+- Users may choose to devour undevoured burgers, or yack out devoured burgers
 
-  * [Set Up MongoDB Atlas](../04-Important/MongoAtlas-Setup.md)
+## Roadmap
 
-  * [Deploy with Heroku and MongoDB Atlas](../04-Important/MongoAtlas-Deploy.md)
+- Update the UI with a modern framework
+- Add the ability to delete burgers
+- Add the ability for users to log in and view their own data
 
-## Commit Early and Often
+**Screen capture demonstrating application functionality**
 
-One of the most important skills to master as a web developer is version control. Building the habit of committing via Git is important for the following two reasons:
+![Application Functionality](./public/assets/screen-captures/MVC-With-Burgers.gif)
 
-1. Your commit history is a signal to employers that you are actively working on projects and learning new skills.
+## Credits
 
-2. Your commit history allows you to revert your codebase in the event that you need to return to a previous state.
+- [mySQL](https://www.npmjs.com/package/mysql)
 
-Follow these guidelines for committing:
+- [ClearDB](https://www.cleardb.com/)
 
-* Make single-purpose commits for related changes to ensure a clean, manageable history. If you are fixing two issues, make two commits.
+- [Heroku](https://www.heroku.com/)
 
-* Write descriptive, meaningful commit messages so that you and anyone else looking at your repository can easily understand its history.
+- [ExpressJS](https://expressjs.com/)
 
-* Don't commit half-done work, for the sake of your collaborators (and your future self!).
-
-* Test your application before you commit to ensure functionality at every step in the development process.
-
-We want you to have well over 200 commits by graduation, so commit early and often!
-
-## Submission on BCS
-
-You are required to submit the following:
-
-* The URL to the deployed application
-
-* The URL to the GitHub repository
+- [Express-Handlebars](https://www.npmjs.com/package/express-handlebars)
+  © 2021 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
